@@ -9,11 +9,15 @@
  - 1x Access point - AP-PT
  - 1x Wireless client - smartphone0
  
- ** Addressing:**
- | Device| Interface| IP Address|VLAN|
- |Router0|G0/0.10|192.168.10./24|10|
- |Switch0|VLAN 1|192.168.1.2/24|1|
- |smartphone0|Wireless0|DHCP|10|
+**Addressing:**
+
+| Device | Interface | IP Address | VLAN |
+| --- | --- | --- | --- |
+| Router0 | G0/0.10 | 192.168.10.1/24 | 10 |
+| Switch0 | VLAN 1 | 192.168.1.2/24 | 1 |
+| Smartphone0 | Wireless0 | DHCP | 10 |
+ 
+ 
  
  ## objectives
  Deploy secure wireless access for VLAN 10 users. configure WPA2-PSK, enable inter-VLAN routing, and serve DHCP from router subinterface. Validate connectivity and document troubledhooting steps.
