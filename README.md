@@ -55,21 +55,26 @@
  3. passphrase : ccna2026
  4. VLAN:10
  
- Verification & Proof
+### Verification & Proof
  
- 1. CDP Neighbor Discovery-identified
-    correct trunk port
-show cdp neighbors: fa0/5 vlans 1,10
-![CDP Neighbors](cdp-neigbhos.png)
-2. TRUNK VALIDATION
-show interface trunk: Fa0/5 vlans 1,10
-   ![Trunk](show-trunk.png)
-3. DHCPBinding-client successfullyleased IP
-show ip dhcp binding:192.168.10.2 0001.971B.BEED
-   ![DHCP Binding](dhcp-blinding.png)
-4. End-to-Endconnectivity
-Smartphone0: ping 192.168.10.1 4/4 success
-   ![Phone IP](phone-ipconfig.png)
+### 1. Network Topology
+![Network Topology](topology.png)
+
+### 2. CDP Neighbor Discovery 
+Identified correct trunk port to router.
+![CDP Neighbors](cdp-neighbors.png)
+
+### 3. Trunk Validation
+Confirmed VLANs 1,10 allowed on trunk to router.
+![Trunk Ports](show-trunk.png)
+
+### 4. DHCP Binding
+Client successfully leased IP 192.168.10.2
+![DHCP Binding](dhcp-binding.png)
+
+### 5. End-to-End Connectivity 
+Smartphone received IP via DHCP and can ping gateway.
+![Phone IP Config](phone-ipconfig.png)
 
 Troubleshooting Log
 Symptom                      Root cause                                    Resoulution Method                        Command Used
