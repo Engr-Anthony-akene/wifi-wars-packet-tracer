@@ -1,7 +1,7 @@
  wi-fi wars: Enterprise Wlan Deployment with inter-Vlan Routing
  Packet Tracer project demonstrating end-to-end wireless deployment using VLAN segmentation, 802.1Q trunking, router-on-a-stick, and DHCP. core focus: Layer 1-3 troubleshooting using CDPand CLI verification.
  ##Topology
- [Network Topology](screenshots/topology.png)
+ [Topology](topology.png)
  
  **Devices:**
  - 1x Router 2911 -router0
@@ -60,16 +60,16 @@
  1. CDP Neighbor Discovery-identified
     correct trunk port
 show cdp neighbors: fa0/5 vlans 1,10
-![cdp](screenshots/cdp-neigbhos.png)
+![CDP Neighbors](cdp-neigbhos.png)
 2. TRUNK VALIDATION
 show interface trunk: Fa0/5 vlans 1,10
-![trunk](screenshots/show-trunk.png)
+   ![Trunk](show-trunk.png)
 3. DHCPBinding-client successfullyleased IP
 show ip dhcp binding:192.168.10.2 0001.971B.BEED
-![blinding](screenshots/dhcp-blinding.png)
+   ![DHCP Binding](dhcp-blinding.png)
 4. End-to-Endconnectivity
 Smartphone0: ping 192.168.10.1 4/4 success
-![ping]{screenshot/phone-ipconfig.png)
+   ![Phone IP](phone-ipconfig.png)
 
 Troubleshooting Log
 Symptom                      Root cause                                    Resoulution Method                        Command Used
